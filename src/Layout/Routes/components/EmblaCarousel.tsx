@@ -51,7 +51,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               />
 
               <div className="embla__slide__text">
-                {slide.text}{" "}
+                {slide.text}
                 <div className="btn-wrapper">
                   <a>Order Now</a>
                   <a>Menu</a>

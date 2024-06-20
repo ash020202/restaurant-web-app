@@ -10,53 +10,16 @@ body {
   background-color: black;
 }
 
-nav {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  height: 70px;
-  border-bottom: #c49b63 solid 1px;
-  position: absolute;
-  z-index: 2;
-}
 .container {
   width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 700;
-  span:nth-child(1) {
-    font-size: 22px;
-    /* color: #2ecc71; */
-  }
-  span:nth-child(2) {
-    font-size: 18px;
-  }
-}
-.links,
-.btn-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  text-transform: uppercase;
-  a {
-    padding: 10px;
-    text-decoration: none;
-  }
-}
-.btn-container {
-  padding-left: 20px;
-  gap: 40px;
-}
-a:hover {
+
+/* a:hover {
   color: #c49b63;
-}
+} */
 .cart {
   background-image: url(./assets/cart_shopping_icon.svg);
   height: 20px;
@@ -65,19 +28,7 @@ a:hover {
   background-repeat: no-repeat;
   cursor: pointer;
 }
-.signup {
-  background-color: #c49b63;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  border: #c49b63 solid 1px;
-}
-/* .signup:hover {
-  color: black;
-  background-color: #c49b63;
-  border: 1px solid #c49b63;
-} */
+
 .embla {
   width: 100%;
   height: 100vh;
@@ -193,7 +144,7 @@ a:hover {
   gap: 10px;
 }
 .btn-wrapper a {
-  padding: 10px;
+  padding: 15px;
   border-radius: 3px;
   cursor: pointer;
 }

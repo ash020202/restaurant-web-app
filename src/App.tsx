@@ -1,4 +1,7 @@
 import "./App.css";
+// src/index.js or src/App.js
+import "./index.css";
+
 // import { Header } from "./components/Header";
 // import EmblaCarousel from "./components/EmblaCarousel";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -20,7 +23,7 @@ function App() {
         },
         {
           path: "/about",
-          element: <About />,
+          element: <About about={[]} />,
         },
         {
           path: "/contact",
