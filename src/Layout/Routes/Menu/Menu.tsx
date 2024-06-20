@@ -1,8 +1,8 @@
 import "../../../App.css";
 const Menu = () => {
   return (
-    <div className="h-[100vh] flex gap-10 items-center p-20">
-      <div className="p-50px w-[50%]">
+    <div className="h-[100vh] flex flex-col md:flex-row gap-10 items-center md:p-20">
+      <div className="p-[15px] md:p-[50px] md:w-[50%]">
         <div className="flex flex-col text-right">
           <span className=" text-3xl text-brown">Discover</span>
           <span className="text-5xl">Our Menu</span>
@@ -20,27 +20,27 @@ const Menu = () => {
           </button>
         </div>
       </div>
-      <div className="width-[50%] flex gap-3">
+      <div className="width-[50%] flex gap-3 p-[15px]">
         <div>
           <img
-            className="hover:transform hover:scale-105 hover:transition duration-75 h-[200px] w-[255px]"
+            className=" object-cover hover:transform hover:scale-105 hover:transition duration-75 h-[200px] w-[255px]"
             src="  https://picsum.photos/600/350"
             alt="three"
           />
           <img
-            className="hover:transform hover:scale-105 hover:transition duration-75 mt-[25px] h-[200px] w-[255px]"
+            className="object-cover hover:transform hover:scale-105 hover:transition duration-75 mt-[25px] h-[200px] w-[255px]"
             src="  https://picsum.photos/600/350"
             alt="four"
           />
         </div>
         <div>
           <img
-            className=" hover:transform hover:scale-105 hover:transition duration-75 mt-[35px] h-[200px] w-[255px]"
+            className="object-cover hover:transform hover:scale-105 hover:transition duration-75 mt-[35px] h-[200px] w-[255px]"
             src="  https://picsum.photos/600/350"
             alt="three"
           />
           <img
-            className=" hover:transform hover:scale-105 hover:transition duration-75 mt-[25px] h-[200px] w-[255px]"
+            className="object-cover hover:transform hover:scale-105 hover:transition duration-75 mt-[25px] h-[200px] w-[255px]"
             src="  https://picsum.photos/600/350"
             alt="four"
           />

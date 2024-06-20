@@ -7,6 +7,7 @@ export default {
         brown: "#c49b63",
         gray: "gray",
         borderBtm: "rgba(255, 255, 255, 0.1)",
+        bg: "rgba(0, 0, 0, 0.5)",
       },
     },
   },
