@@ -8,6 +8,10 @@ export default {
         gray: "gray",
         borderBtm: "rgba(255, 255, 255, 0.1)",
         bg: "rgba(0, 0, 0, 0.5)",
+        even: "#b08b59",
+      },
+      width: {
+        custom: "calc(100% - 40px)",
       },
     },
   },

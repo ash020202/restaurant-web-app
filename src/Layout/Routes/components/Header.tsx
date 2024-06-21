@@ -4,7 +4,7 @@ export const Header = () => {
   const navLinks = ["Home", "Menu", "About", "Contact"];
   return (
     <nav className="w-[100%] h-[40px] bg-black md:h-[80px] md:bg-transparent flex justify-center border-b-[1px] border-borderBtm absolute z-[2]  px-[2rem] py-[1.5rem] md:py-[0.9rem] md:px-[5rem]">
-      <div className="container">
+      <div className="w-[100dvw] flex items-center justify-between">
         <div className="flex flex-col items-center font-[700] leading-none">
           <span className="text-[16px] md:text-[22px]">THOOKU</span>
           <span className=" text-[14px] md:text-[18px]">BIRYANI</span>
