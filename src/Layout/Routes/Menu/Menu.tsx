@@ -1,19 +1,19 @@
 import "../../../App.css";
 const Menu = () => {
+  const content = {
+    title: "Discover",
+    subtitle: "Our Menu",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, voluptates illo nostrum aspernatur fuga enim sunt aperiam eos quis repellendus neque ad pariatur assumenda qui at doloremque id laboriosam molestias eveniet! Nesciunt illum voluptates reprehenderit.",
+  };
   return (
     <div className="min-h-[100vh] flex flex-col md:flex-row gap-10 items-center py-[20px] md:p-20">
       <div className="p-[15px] md:p-[50px] md:w-[50%]">
         <div className="flex flex-col text-right">
-          <span className=" text-3xl text-brown">Discover</span>
-          <span className="text-5xl">Our Menu</span>
+          <span className=" text-3xl text-brown">{content.title}</span>
+          <span className="text-5xl">{content.subtitle}</span>
         </div>
 
-        <div className=" text-justify pt-5 pb-3 text-gray">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-          voluptates illo nostrum aspernatur fuga enim sunt aperiam eos quis
-          repellendus neque ad pariatur assumenda qui at doloremque id
-          laboriosam molestias eveniet! Nesciunt illum voluptates reprehenderit.
-        </div>
+        <div className=" text-justify pt-5 pb-3 text-gray">{content.desc}</div>
         <div className="text-right">
           <button className="text-brown px-4 py-3 bg-transparent border-solid border border-brown hover:bg-brown hover:text-white hover:transition duration-75">
             View Full Menu

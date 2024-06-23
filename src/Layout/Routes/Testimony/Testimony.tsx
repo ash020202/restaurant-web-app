@@ -1,37 +1,19 @@
 import React from "react";
-// type UserData = {
-//   username: string;
-//   date: string;
-// };
+import { TestimonyItem } from "./TestimonyItem";
 
-// type DataItem = {
-//   id: number;
-//   feedback: string;
-//   user: UserData[];
-// };
+type UserData = {
+  username: string;
+  date: string;
+};
 
-const TestimonyItem: React.FC = () => (
-  <div className="flex flex-col justify-evenly bg-brown p-8">
-    <div className="text-justify">
-      “Even the all-powerful Pointing has no control about the blind texts it is
-      an almost unorthographic life One day however a small.”
-    </div>
-    <div className="flex gap-[15px] p-[10px]">
-      <img
-        src="../src/assets/about.jpg"
-        className="h-[32px] w-[32px] rounded-[32px]"
-        alt=""
-      />
-      <div>
-        <p>UserName</p>
-        <p>bought month ago</p>
-      </div>
-    </div>
-  </div>
-);
+type DataItem = {
+  id: number;
+  feedback: string;
+  user: UserData[];
+};
 
 export const Testimony: React.FC = () => {
-  const data = [
+  const data: DataItem[] = [
     {
       id: 1,
       feedback:
@@ -110,9 +92,9 @@ export const Testimony: React.FC = () => {
           Vokalia and Consonantia, there live the blind texts.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row md:justify-start md:items-end md:[&>div:nth-child(odd)]:h-[300px] [&>div:nth-child(even)]:bg-even md:[&>div:nth-child(even)]:h-[350px]">
-        {data.map((_, index) => (
-          <TestimonyItem key={index} />
+      <div className="flex flex-col md:flex-row md:justify-start md:items-end md:[&>div:nth-child(odd)]:min-h-[300px] [&>div:nth-child(even)]:bg-even md:[&>div:nth-child(even)]:min-h-[350px] ">
+        {data.map((item) => (
+          <TestimonyItem key={item.id} data={item} />
         ))}
       </div>
     </section>

@@ -19,8 +19,10 @@ const About: React.FC<aboutProps> = ({ about }) => {
       </div>
       <div className="py-[20px] md:pt-[7%] md:pr-[9%] md:pb-[8%] md:pl-[8%] md:w-[50%] backdrop-blur">
         <div className=" ml-0 md:ml-[-150px] md:p-[40px] bg-bg">
-          <div className="title">{about[0].title}</div>
-          <div className=" text-justify">{about[0].desc}</div>
+          <div className="text-[40px] text-brown font-[500] leading-[50px]">
+            {about[0].title}
+          </div>
+          <div className=" text-justify text-gray">{about[0].desc}</div>
         </div>
       </div>
     </div>

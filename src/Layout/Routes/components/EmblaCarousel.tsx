@@ -52,9 +52,13 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
               <div className="embla__slide__text">
                 {slide.text}
-                <div className="btn-wrapper">
-                  <a>Order Now</a>
-                  <a>Menu</a>
+                <div className="flex gap-[10px] [&>a]:p-[15px] [&>a]:rounded-[3px] [&>a]:cursor-pointer [&>a]:transition-all [&>a]:duration-500">
+                  <a className="border-[1px] bg-brown border-brown hover:text-brown hover:bg-transparent hover:border hover:border-brown">
+                    Order Now
+                  </a>
+                  <a className="border-[1px] bg-transparent border-white hover:border-[1px] hover:border-brown hover:bg-brown">
+                    Menu
+                  </a>
                 </div>
               </div>
             </div>
