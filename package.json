@@ -1,6 +1,5 @@
 {
-  "name": "restaurant-web-app",
-  "homepage": "https://ash020202.github.io/restaurant-web-app/",
+  "homepage": "https://ash020202.github.io/restaurant-web-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,7 +15,6 @@
     "embla-carousel-autoplay": "^8.1.5",
     "embla-carousel-fade": "^8.1.5",
     "embla-carousel-react": "^8.1.5",
-    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1"
@@ -31,6 +29,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.2.2",

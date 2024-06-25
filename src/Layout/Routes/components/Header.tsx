@@ -41,6 +41,7 @@ export const Header = () => {
               </a>
             );
           })}
+
           <div className="flex gap-[60px] items-center">
             <a href="">
               <img
