@@ -1,4 +1,3 @@
-import "../../../App.css";
 const Menu = () => {
   const content = {
     title: "Discover",
