@@ -20,6 +20,15 @@ export default {
       boxShadow: {
         shadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
       },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 1s ease-in-out",
+      },
     },
   },
   plugins: [],

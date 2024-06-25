@@ -21,14 +21,14 @@ type AddressProps = {
 };
 export const Address: React.FC<AddressProps> = ({ address }) => {
   return (
-    <div className="px-[20px] py-[10px] flex flex-col justify-start items-start md:flex-row md:items-center md:justify-center capitalize  [&>div]:flex [&>div]:justify-center [&>div]:items-start [&>div]:gap-2 [&>div]:px-[10px] [&>div]:py-[20px]">
+    <div className=" duration-700 px-[20px] py-[10px] flex flex-col justify-start items-start md:flex-row md:items-center md:justify-center capitalize  [&>div]:flex [&>div]:justify-center [&>div]:items-start [&>div]:gap-2 [&>div]:px-[10px] [&>div]:py-[20px]">
       {address.map((addr, index) => {
         if ("desc" in addr && "phone" in addr) {
           return (
             <div key={index}>
               <img
                 className="w-[20px] h-[20px] p-[3px] rounded-[10px] bg-cover bg-brown"
-                src="/phone.svg"
+                src="phone.svg"
                 alt=""
               />
               <div className=" w-custom">
@@ -42,7 +42,7 @@ export const Address: React.FC<AddressProps> = ({ address }) => {
             <div key={index}>
               <img
                 className="w-[20px] h-[20px] p-[3px] rounded-[10px] bg-cover bg-brown"
-                src="/location.svg"
+                src="location.svg"
                 alt=""
               />
               <div>
@@ -56,7 +56,7 @@ export const Address: React.FC<AddressProps> = ({ address }) => {
             <div key={index} className=" md:min-w-48">
               <img
                 className="w-[20px] h-[20px] p-[3px] rounded-[10px] bg-cover bg-brown"
-                src="/timer.svg"
+                src="timer.svg"
                 alt=""
               />
               <div>

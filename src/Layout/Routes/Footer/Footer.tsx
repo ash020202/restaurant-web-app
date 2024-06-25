@@ -1,6 +1,9 @@
 export const Footer = () => {
   return (
-    <div className="px-[30px] pt-[50px] pb-[100px]  capitalize text-justify flex flex-col  md:flex-row md:justify-around">
+    <div
+      id="contact"
+      className="px-[30px] pt-[50px] pb-[100px]  capitalize text-justify flex flex-col  md:flex-row md:justify-around"
+    >
       <div className="md:w-[300px]">
         <p className="text-[25px] font-[400]">Sign up with OTP</p>
         <div className=" ">
@@ -59,11 +62,11 @@ export const Footer = () => {
         </div>
         <div className="flex items-center pt-[10px] gap-3 [&>a>img]:cursor-pointer [&>a>img]:w-[32px] [&>a>img]:h-[32px] [&>a>img]:transition-all [&>a>img]:duration-500 [&>a>img]:rounded-lg">
           <a href="">
-            <img src="/instagram_icon.svg" className="hover:bg-insta " alt="" />
+            <img src="instagram_icon.svg" className="hover:bg-insta " alt="" />
           </a>
           <a href="">
             <img
-              src="/whatsapp_icon.svg"
+              src="whatsapp_icon.svg"
               className=" hover:bg-green-400 "
               alt=""
             />

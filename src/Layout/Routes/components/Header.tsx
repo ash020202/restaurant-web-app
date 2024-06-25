@@ -18,7 +18,9 @@ export const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const navLinks = ["Home", "Menu", "About", "Contact"];
+  const navLinks = ["home", "menu", "about", "contact"];
+  const [activeLinks, setActiveLinks] = useState("Home");
+
   return (
     <nav
       className={`w-[100%] h-[40px]  bg-black md:h-[80px] md:bg-transparent flex justify-center border-b-[1px] border-borderBtm z-[2]  px-[2rem] py-[1.5rem] md:py-[0.9rem] md:px-[5rem] 
@@ -29,13 +31,16 @@ export const Header = () => {
           <span className="text-[16px] md:text-[22px]">THOOKU</span>
           <span className=" text-[14px] md:text-[18px]">BIRYANI</span>
         </div>
-        <div className="hidden md:flex gap-[60px] items-center w-[600px] uppercase">
+        <div className=" animate-fadeIn hidden md:flex gap-[60px] items-center w-[600px] uppercase">
           {navLinks.map((link, index) => {
             return (
               <a
-                className="no-underline text-[13px] hover:text-brown hover:transition-all"
-                href=""
+                className={`no-underline text-[13px] hover:text-brown hover:transition-all active:text-brown ${
+                  activeLinks === link ? "text-brown" : "text-white"
+                }`}
+                href={"#" + link}
                 key={index}
+                onClick={() => setActiveLinks(link)}
               >
                 {link}
               </a>
@@ -45,7 +50,7 @@ export const Header = () => {
           <div className="flex gap-[60px] items-center">
             <a href="">
               <img
-                src="/cart_shopping_icon.svg"
+                src="cart_shopping_icon.svg"
                 className=" cursor-pointer"
               ></img>
             </a>

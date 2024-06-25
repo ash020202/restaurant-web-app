@@ -5,7 +5,10 @@ const Menu = () => {
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, voluptates illo nostrum aspernatur fuga enim sunt aperiam eos quis repellendus neque ad pariatur assumenda qui at doloremque id laboriosam molestias eveniet! Nesciunt illum voluptates reprehenderit.",
   };
   return (
-    <div className="min-h-[100vh] flex flex-col md:flex-row gap-10 items-center py-[20px] md:p-20">
+    <div
+      id="menu"
+      className="min-h-[100vh] flex flex-col md:flex-row gap-10 items-center py-[20px] md:p-20"
+    >
       <div className="p-[15px] md:p-[50px] md:w-[50%]">
         <div className="flex flex-col text-right">
           <span className=" text-3xl text-brown">{content.title}</span>

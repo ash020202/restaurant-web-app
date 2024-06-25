@@ -9,10 +9,13 @@ type aboutProps = {
 };
 const About: React.FC<aboutProps> = ({ about }) => {
   return (
-    <div className=" p-[15px] flex flex-col md:flex-row md:justify-between">
+    <div
+      id="about"
+      className=" p-[15px] flex flex-col md:flex-row md:justify-between"
+    >
       <div className=" md:w-50% md:h-600px ">
         <img
-          src="/about.jpg"
+          src="about.jpg"
           className="w-[800px] h-[600px] object-cover"
           alt=""
         />

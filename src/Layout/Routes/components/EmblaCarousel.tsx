@@ -39,7 +39,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     };
   }, [emblaApi]);
   return (
-    <div className="embla">
+    <div id="home" className="embla animate-fadeIn">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((slide) => (
